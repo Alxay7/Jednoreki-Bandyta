@@ -11,20 +11,48 @@
             <ImageBrush ImageSource="/Resources/backgrounds/table_green.png"/>
         </Grid.Background>
         <Canvas>
+
             <Image Source="/Resources/slots/slots_bg.png"
                    Canvas.Left="195" Height="375" Width="409" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="-10"/>
-            <Image Source="/Resources/slots/1.png"
-                   x:Name="slot1"
-                   Canvas.Left="234" Height="108" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="112" RenderTransformOrigin="0.455,1.042"/>
-            <Image Source="/Resources/slots/1.png"
-                   x:Name="slot2"
-        Canvas.Left="464" Height="108" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="112" RenderTransformOrigin="0.455,1.042"/>
-            <Image Source="/Resources/slots/1.png"
-                   x:Name="slot3"
-        Canvas.Left="350" Height="108" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="116" RenderTransformOrigin="0.455,1.042"/>
 
-            <Image Source="/Resources/slots/slot_machine.png"
-        Canvas.Left="110" Height="444" Width="628" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="-10"/>
+            <Image Source="/Resources/slots/5.png"
+                   x:Name="slot1"
+                   Canvas.Left="245" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="60" RenderTransformOrigin="0.455,1.042"/>
+            <Image Source="/Resources/slots/5.png"
+                   x:Name="slot2"
+        Canvas.Left="245" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="133" RenderTransformOrigin="0.455,1.042"/>
+            <Image Source="/Resources/slots/5.png"
+                   x:Name="slot3"
+        Canvas.Left="245" Height="74" Width="78" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="206" RenderTransformOrigin="0.455,1.042"/>
+
+
+            <Image Source="/Resources/slots/5.png"
+                   x:Name="slot1_2"
+                   Canvas.Left="360" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="60" RenderTransformOrigin="0.455,1.042"/>
+            <Image Source="/Resources/slots/5.png"
+                   x:Name="slot2_2"
+        Canvas.Left="360" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="133" RenderTransformOrigin="0.455,1.042"/>
+            <Image Source="/Resources/slots/5.png"
+                   x:Name="slot3_2"
+        Canvas.Left="360" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="206" RenderTransformOrigin="0.455,1.042"/>
+
+
+            <Image Source="/Resources/slots/5.png"
+           x:Name="slot1_3"
+           Canvas.Left="475" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="60" RenderTransformOrigin="0.455,1.042"/>
+            <Image Source="/Resources/slots/5.png"
+           x:Name="slot2_3"
+Canvas.Left="475" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="133" RenderTransformOrigin="0.455,1.042"/>
+            <Image Source="/Resources/slots/5.png"
+           x:Name="slot3_3"
+Canvas.Left="475" Height="74" Width="78" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="206" RenderTransformOrigin="0.455,1.042"/>
+
+
+
+
+
+
+
             <Slider x:Name="animationDuration"
             Minimum="5"
             Maximum="200"
@@ -32,13 +60,46 @@
             TickFrequency="10"
             IsSnapToTickEnabled="True" HorizontalAlignment="Center" Height="20" Canvas.Top="114" VerticalAlignment="Top" Width="171" Canvas.Left="10"/>
             <Label Content="Animation duration:" Foreground="White" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="88" VerticalAlignment="Top"/>
-            <Button Content="Spin" Width="139" Click="Spin" Height="36" HorizontalAlignment="Center" Canvas.Left="23" Canvas.Top="148" VerticalAlignment="Top"/>
+
+
+            <Slider x:Name="animationSpeed"
+            Minimum="50"
+            Maximum="500"
+            Value="100"
+            TickFrequency="10"
+            IsSnapToTickEnabled="True" HorizontalAlignment="Center" Height="20" Canvas.Top="168" VerticalAlignment="Top" Width="171" Canvas.Left="10"/>
+            <Label Content="Animation speed:" Foreground="White" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="139" VerticalAlignment="Top"/>
+            <Button Content="Spin" Width="139" Click="Spin" Height="36" HorizontalAlignment="Center" Canvas.Left="26" Canvas.Top="206" VerticalAlignment="Top"/>
+            <Button Content="Reset" Width="139" Click="Reset" Height="36" HorizontalAlignment="Center" Canvas.Left="26" Canvas.Top="246" VerticalAlignment="Top"/>
+
 
             <Label Content="Multiplayer:" Foreground="White" HorizontalAlignment="Center" Canvas.Left="10" Canvas.Top="59" VerticalAlignment="Top" Height="26"/>
             <TextBox x:Name="multiplayer" Text="1" HorizontalAlignment="Center" Canvas.Left="92" Canvas.Top="65" VerticalAlignment="Top" Width="32"/>
             <Image Source="/Resources/backgrounds/tlo_kasy.png" Stretch="Fill" Height="54" Width="153"/>
-            <Label x:Name="balance" Content="1000$" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Foreground="#1CA300" Height="42" Width="143" Canvas.Left="10" Canvas.Top="6"/>
+            <Label x:Name="balance" Content="1000$" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Foreground="#1CA300" Height="42" Width="243" Canvas.Left="10" Canvas.Top="6"/>
+
+
+            <Image Source="/Resources/chips/chipStack0.png" HorizontalAlignment="Center" Canvas.Top="292" VerticalAlignment="Center" Canvas.Left="14"/>
+            <Label Content="10" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" Canvas.Left="33" Canvas.Top="292" VerticalAlignment="Center" FontSize="18"/>
+            <Image Source="/Resources/chips/chipStack1.png" HorizontalAlignment="Center" Canvas.Top="292" VerticalAlignment="Center" Canvas.Left="108"/>
+            <Label Content="100" FontWeight="Bold" Foreground="White" HorizontalAlignment="Left" Canvas.Left="121" Canvas.Top="292" VerticalAlignment="Center" FontSize="18"/>
+            <Image Source="/Resources/chips/chipStack2.png" HorizontalAlignment="Left" Canvas.Top="355" VerticalAlignment="Center" Canvas.Left="12"/>
+            <Label Content="1k" FontWeight="Bold" Foreground="White" Canvas.Left="30" Canvas.Top="355" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image Source="/Resources/chips/chipStack3.png" HorizontalAlignment="Center" Canvas.Top="355" VerticalAlignment="Center" Canvas.Left="108"/>
+            <Label Content="10k" FontWeight="Bold" Foreground="White" Canvas.Left="124" Canvas.Top="355" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
         </Canvas>
+
+        <Canvas x:Name="zetony" Margin="611,0,0,0">
+
+        </Canvas>
+
+        <Image Source="/Resources/slots/slot_machine.png"
+     Canvas.Left="110" Height="444" Width="628" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="-10" Margin="110,-10,0,0"/>
+
+
+
 
 
 

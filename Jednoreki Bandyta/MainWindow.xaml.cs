@@ -24,6 +24,7 @@ namespace Jednoreki_Bandyta
         public MainWindow()
         {
             InitializeComponent();
+            updateTokens();
         }
 
         public async void Spin(object sender, RoutedEventArgs e)
@@ -42,15 +43,37 @@ namespace Jednoreki_Bandyta
             int slot1_value = 1;
             int slot2_value = 1;
             int slot3_value = 1;
+            int slot1_2value = 1;
+            int slot2_2value = 1;
+            int slot3_2value = 1;
+            int slot1_3value = 1;
+            int slot2_3value = 1;
+            int slot3_3value = 1;
+
             for (int i = 0; i < dlugosc_animacji; i++)
             {
+                slot3_value = slot2_value;
+                slot2_value = slot1_value;
+
+                slot3_2value = slot2_2value;
+                slot2_2value = slot1_2value;
+
+                slot3_3value = slot2_3value;
+                slot2_3value = slot1_3value;
+
                 slot1_value = random.Next(1, 6);
-                slot2_value = random.Next(1, 6);
-                slot3_value = random.Next(1, 6);
+                slot1_2value = random.Next(1, 6);
+                slot1_3value = random.Next(1, 6);
                 slot1.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot1_value}.png"));
                 slot2.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot2_value}.png"));
                 slot3.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot3_value}.png"));
-                await Task.Delay(100);
+                slot1_2.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot1_2value}.png"));
+                slot2_2.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot2_2value}.png"));
+                slot3_2.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot3_2value}.png"));
+                slot1_3.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot1_3value}.png"));
+                slot2_3.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot2_3value}.png"));
+                slot3_3.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/slots/{slot3_3value}.png"));
+                await Task.Delay((int)animationSpeed.Value);
 
             }
             // Zmienna pomocnicza do zliczania wiśni (ułatwia sprawdzanie "ANY TWO" i "ANY ONE")
@@ -118,7 +141,105 @@ namespace Jednoreki_Bandyta
                 balance.Content = $"${wallet}";
             }
             canSpin = 1;
+            updateTokens();
 
-        } 
+        }
+
+        private void Reset(object sender, RoutedEventArgs e)
+        {
+            animationSpeed.Value = 100;
+            animationDuration.Value = 20;
+        }
+
+        public void updateTokens()
+        {
+            int balans = (int)wallet;
+            zetony.Children.Clear();
+            int lastestChipPos = -17;
+            int chipCount = 0;
+            int rightMargin = 0;
+
+
+            int chip3 = balans / 10000;
+            balans -= chip3 * 10000;
+
+            for (int i = 0; i < chip3; i++)
+            {
+                Image tokenImage = new Image();
+                tokenImage.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/chips/chipStack3.png"));
+                Canvas.SetRight(tokenImage, rightMargin); // Przesunięcie każdego tokena o 30 pikseli
+                Canvas.SetBottom(tokenImage, lastestChipPos + 17); // Ustawienie wysokości tokena
+                zetony.Children.Add(tokenImage);
+                lastestChipPos += 17;
+                chipCount++;
+                if (chipCount >= 23)
+                {
+                    chipCount = 0;
+                    rightMargin += 70;
+                    lastestChipPos = -17;
+                }
+            }
+
+            int chip2 = balans / 1000;
+            balans -= chip2 * 1000;
+
+            for (int i = 0; i < chip2; i++)
+            {
+                Image tokenImage = new Image();
+                tokenImage.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/chips/chipStack2.png"));
+                Canvas.SetRight(tokenImage, rightMargin); // Przesunięcie każdego tokena o 30 pikseli
+                Canvas.SetBottom(tokenImage, lastestChipPos + 17); // Ustawienie wysokości tokena
+                zetony.Children.Add(tokenImage);
+                lastestChipPos += 17;
+                chipCount++;
+                if (chipCount >= 23)
+                {
+                    chipCount = 0;
+                    rightMargin += 70;
+                    lastestChipPos = -17;
+                }
+            }
+
+            int chip1 = balans / 100;
+            balans -= chip1 * 100;
+
+            for (int i = 0; i < chip1; i++)
+            {
+                Image tokenImage = new Image();
+                tokenImage.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/chips/chipStack1.png"));
+                Canvas.SetRight(tokenImage, rightMargin); // Przesunięcie każdego tokena o 30 pikseli
+                Canvas.SetBottom(tokenImage, lastestChipPos + 17); // Ustawienie wysokości tokena
+                zetony.Children.Add(tokenImage);
+                lastestChipPos += 17;
+                chipCount++;
+                if (chipCount >= 23)
+                {
+                    chipCount = 0;
+                    rightMargin += 70;
+                    lastestChipPos = -17;
+                }
+            }
+
+            int chip0 = balans / 10;
+            balans -= chip0 * 10;
+
+            for (int i = 0; i < chip0; i++)
+            {
+                Image tokenImage = new Image();
+                tokenImage.Source = new BitmapImage(new Uri($"pack://application:,,,/Resources/chips/chipStack0.png"));
+                Canvas.SetRight(tokenImage, rightMargin); // Przesunięcie każdego tokena o 30 pikseli
+                Canvas.SetBottom(tokenImage, lastestChipPos + 17); // Ustawienie wysokości tokena
+                zetony.Children.Add(tokenImage);
+                lastestChipPos += 17;
+                chipCount++;
+                if (chipCount >= 23)
+                {
+                    chipCount = 0;
+                    rightMargin += 70;
+                    lastestChipPos = -17;
+                }
+            }
+        }
+
     }
 }

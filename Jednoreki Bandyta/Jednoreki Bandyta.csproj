@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Jednoreki_Bandyta</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\backgrounds\table_blue.png" />
+    <None Remove="Resources\backgrounds\table_green.png" />
+    <None Remove="Resources\backgrounds\table_red.png" />
+    <None Remove="Resources\backgrounds\tlo_kasy.png" />
+    <None Remove="Resources\slots\1.png" />
+    <None Remove="Resources\slots\2.png" />
+    <None Remove="Resources\slots\3.png" />
+    <None Remove="Resources\slots\4.png" />
+    <None Remove="Resources\slots\5.png" />
+    <None Remove="Resources\slots\6.png" />
+    <None Remove="Resources\slots\bar.png" />
+    <None Remove="Resources\slots\bell.png" />
+    <None Remove="Resources\slots\cherry.png" />
+    <None Remove="Resources\slots\DoubleBar.png" />
+    <None Remove="Resources\slots\grapefruit.png" />
+    <None Remove="Resources\slots\seven.png" />
+    <None Remove="Resources\slots\slots_bg.png" />
+    <None Remove="Resources\slots\slot_machine.png" />
+    <None Remove="Resources\slots\slot_reel.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\backgrounds\table_blue.png" />
+    <Resource Include="Resources\backgrounds\table_green.png" />
+    <Resource Include="Resources\backgrounds\table_red.png" />
+    <Resource Include="Resources\backgrounds\tlo_kasy.png" />
+    <Resource Include="Resources\slots\1.png" />
+    <Resource Include="Resources\slots\2.png" />
+    <Resource Include="Resources\slots\3.png" />
+    <Resource Include="Resources\slots\4.png" />
+    <Resource Include="Resources\slots\5.png" />
+    <Resource Include="Resources\slots\6.png" />
+    <Resource Include="Resources\slots\slots_bg.png" />
+    <Resource Include="Resources\slots\slot_machine.png" />
+  </ItemGroup>
+
+</Project>

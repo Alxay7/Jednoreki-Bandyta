@@ -18,3 +18,4 @@ C:\Users\User\Desktop\Jednoreki Bandytra\Jednoreki Bandyta\Jednoreki Bandyta\obj
 C:\Users\User\Desktop\Jednoreki Bandytra\Jednoreki Bandyta\Jednoreki Bandyta\obj\Debug\net8.0-windows\Jednoreki Bandyta.pdb
 C:\Users\User\Desktop\Jednoreki Bandytra\Jednoreki Bandyta\Jednoreki Bandyta\obj\Debug\net8.0-windows\Jednoreki Bandyta.genruntimeconfig.cache
 C:\Users\User\Desktop\Jednoreki Bandytra\Jednoreki Bandyta\Jednoreki Bandyta\obj\Debug\net8.0-windows\ref\Jednoreki Bandyta.dll
+C:\Users\User\Desktop\Jednoreki Bandytra\Jednoreki Bandyta\Jednoreki Bandyta\obj\Debug\net8.0-windows\Jednoreki Bandyta.sourcelink.json

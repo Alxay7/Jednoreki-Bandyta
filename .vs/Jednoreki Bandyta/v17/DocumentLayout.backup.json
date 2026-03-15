@@ -18,46 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Jednoreki Bandytra\\Jednoreki Bandyta\\Jednoreki Bandyta\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Jednoreki Bandyta\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Jednoreki Bandytra\\Jednoreki Bandyta\\Jednoreki Bandyta\\MainWindow.xaml.cs",
-              "RelativeToolTip": "Jednoreki Bandyta\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T13:42:18.156Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "51c69a29-358b-4fb6-9355-0678616b66ab",
-        "Display": 0,
-        "X": 32,
-        "Y": 67,
-        "Width": 1533,
-        "Height": 784,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -67,7 +33,20 @@
               "ToolTip": "C:\\Users\\User\\Desktop\\Jednoreki Bandytra\\Jednoreki Bandyta\\Jednoreki Bandyta\\MainWindow.xaml",
               "RelativeToolTip": "Jednoreki Bandyta\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-16T13:42:19.877Z",
+              "WhenOpened": "2026-02-17T20:00:11.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Jednoreki Bandytra\\Jednoreki Bandyta\\Jednoreki Bandyta\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Jednoreki Bandyta\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Jednoreki Bandytra\\Jednoreki Bandyta\\Jednoreki Bandyta\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Jednoreki Bandyta\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAIwBcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T13:42:18.156Z",
               "EditorCaption": ""
             }
           ]
